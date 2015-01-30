@@ -1,1 +1,3 @@
-<%= @character.name %>
+<% @character.each do |character| %>
+<%= character.name %>
+<% end %>

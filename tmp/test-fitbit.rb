@@ -52,8 +52,3 @@ else
   # Write the whole oauth token set back to the config file
   File.open(".fitgem.yml", "w") {|f| f.write(config.to_yaml) }
 end
-
-# ============================================================
-# Add Fitgem API calls on the client object below this line
-
-pp client.activities_on_date 'today'

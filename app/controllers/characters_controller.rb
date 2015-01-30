@@ -6,7 +6,7 @@ class CharactersController < ApplicationController
 	end
 
 	def create
-		@character = Character.new
+		@character = current_user.character.all
 		@character.user = current_user
 
 			if @character.save
